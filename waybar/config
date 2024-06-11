@@ -1,0 +1,32 @@
+{
+"include": "~/.config/waybar/modules",
+"layer": "top",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 6,
+"fixed-center": true,
+"ipc": true,
+"margin-top": 3,
+"margin-left": 10,
+"margin-right": 10,
+
+"modules-left": [
+"custom/menu",
+"custom/power",
+"wlr/taskbar"
+],
+  
+"modules-center": [
+"hyprland/workspaces#pacman"
+],
+  
+"modules-right": [
+"tray",
+"idle_inhibitor",
+"battery",
+"clock",
+"custom/swaync"
+],
+  
+},
