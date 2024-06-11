@@ -1,0 +1,191 @@
+*{
+	font-family: "JetBrainsMono Nerd Font";
+	min-height: 10px;	
+	/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+	font-size: 12px;
+	font-weight: bold;
+}
+
+@import "mocha.css";
+	
+window#waybar {
+	background:transparent;
+}
+	
+window#waybar.hidden {
+	opacity: 0.2;
+}
+
+window#waybar > box {
+    border-radius: 10px;
+    margin: 5px 5px 5px 5px;
+    background-color: rgba(17,17,27, 0.6);
+    box-shadow: 2px 2px 2px 1px rgba(17,17,27, 0.4);
+}
+	   
+#window {
+	margin-top: 0px;
+	margin-left: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: @text;
+	background: transparent;
+}	   
+	   
+tooltip {
+	background: @base;
+	border-radius: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: @base;
+	color: @text;
+}
+
+#workspaces {
+	margin-top: 0px;
+	margin-left: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: @text;
+	background: transparent;
+}
+
+/*#workspaces button {
+*   	animation: gradient_f 20s ease-in infinite;
+*   	transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+}*/
+   
+#workspaces button.active {
+	color: @base;
+	background: @red
+/*   	animation: gradient_f 20s ease-in infinite;
+ *  	transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+*/
+}
+
+#battery {
+	margin-top: 0px;
+	margin-left: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: @base;
+	background: @sky;
+}
+
+#battery.charging, #battery.plugged {
+	color: @base;
+    background-color: @yellow;
+}
+
+#battery.critical:not(.charging) {
+    background-color: @red;
+    color: @base;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #BF616A;
+        color: #B5E8E0;
+    }
+}
+	
+#tray {
+	margin-top: 0px;
+	margin-left: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: @text;
+	background: transparent;
+}
+#custom-menu {
+	margin-top: 0px;
+	margin-left: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: @text;
+	background: transparent;
+}
+#custom-power {
+	margin-top: 0px;
+	margin-left: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: @text;
+	background: transparent;
+}
+
+#custom-swaync {
+	margin-top: 0px;
+	margin-left: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: @base;
+	background: @lavender;
+}
+
+#idle_inhibitor {
+	margin-top: 0px;
+	margin-left: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: @text;
+	background: transparent;
+}
+
+#taskbar {
+	margin-top: 0px;
+	margin-left: 0px;
+	padding-left: 0px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: @text;
+	background: transparent;
+}
+
+#taskbar button.active{
+background: @mauve;
+color: @base;
+}
+	 
+#clock {
+	margin-top: 0px;
+	margin-left: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: @base;
+	background: @green;
+}

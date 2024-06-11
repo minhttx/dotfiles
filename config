@@ -1,0 +1,52 @@
+{
+"include": "~/.config/waybar/modules",
+"layer": "top",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 6,
+"fixed-center": true,
+"ipc": true,
+"margin-top": 3,
+"margin-left": 10,
+"margin-right": 10,
+
+"modules-left": [
+"custom/menu",
+"custom/power",
+"wlr/taskbar"
+],
+"modules-center": [
+
+"hyprland/workspaces#pacman"
+],
+"modules-right": [
+        "tray",
+        "idle_inhibitor",
+	"battery",
+	"clock",
+	"custom/swaync"
+],
+},
+
+//{
+//"include": "~/.config/waybar/modules",
+//"layer": "top",
+//"mode": "dock",
+//"exclusive": true,
+//"passthrough": false,
+//"position": "bottom",
+//"spacing": 6,
+//"fixed-center": true,
+//"ipc": true,
+//"margin-bottom": 5,
+//"margin-left": 12,
+//"margin-right": 12,
+//
+//"modules-left": [
+//  "mpris"
+//  ],
+//"modules-center": [
+// "wlr/taskbar"
+//	],
+//}
